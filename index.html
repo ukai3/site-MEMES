@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Criador de Memes</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Criador de Memes</h1>
+        <div class="tabs">
+            <button onclick="showTab('criarMeme')">Criar Meme</button>
+            <button onclick="showTab('explicacao')">Explicação sobre Memes</button>
+        </div>
+
+        <div id="criarMeme" class="tab-content">
+            <div class="meme">
+                <h2>Texto do Meme 1</h2>
+                <div class="meme-container">
+                    <img src="imagens/imagem1.png" alt="Meme 1" id="meme1">
+                    <div id="textoMeme1" class="texto-meme"></div>
+                </div>
+                <textarea id="inputTextoMeme1" placeholder="Digite o texto aqui..."></textarea>
+                <button onclick="adicionarTexto('meme1', 'inputTextoMeme1')">Adicionar Texto</button>
+            </div>
+
+            <div class="meme">
+                <h2>Texto do Meme 2</h2>
+                <div class="meme-container">
+                    <img src="imagens/imagem2.png" alt="Meme 2" id="meme2">
+                    <div id="textoMeme2" class="texto-meme"></div>
+                </div>
+                <textarea id="inputTextoMeme2" placeholder="Digite o texto aqui..."></textarea>
+                <button onclick="adicionarTexto('meme2', 'inputTextoMeme2')">Adicionar Texto</button>
+            </div>
+
+            <div class="meme">
+                <h2>Texto do Meme 3</h2>
+                <div class="meme-container">
+                    <img src="imagens/imagem3.png" alt="Meme 3" id="meme3">
+                    <div id="textoMeme3" class="texto-meme"></div>
+                </div>
+                <textarea id="inputTextoMeme3" placeholder="Digite o texto aqui..."></textarea>
+                <button onclick="adicionarTexto('meme3', 'inputTextoMeme3')">Adicionar Texto</button>
+            </div>
+        </div>
+
+        <div id="explicacao" class="tab-content" style="display:none;">
+            <h2>O que são Memes?</h2>
+            <p>Dois tipos de memes mais comuns podem ser Frases, comumente acompanhadas de figuras, que são informações com tom jocoso e trocadilhos, ou Desenhos geralmente em preto e branco, que são imagens com traços caricatos ou fotos adaptadas e desenhos.</p>
+            <p>Memes são imagens estáticas, vídeos e textos que compartilham ideias, críticas ou apenas piadas.</p>
+            <p>Exemplos de memes: Um tweet publicado na rede social X (Twitter) pode ser um meme, assim como um vídeo curto que apareceu nos Reels do Instagram ou no TikTok.</p>
+            <p>Qual é o objetivo do meme? Viralizar na internet, complementado com texto, compartilhando comentários pontuais sobre símbolos culturais, ideias sociais ou eventos atuais.</p>
+            <p>Os memes podem ter como origem fontes diversas: discursos, falas, costumes, erros de arbitragem no futebol, furos jornalísticos, fatos engraçados, personagens políticos e até notícias de economia. Tudo que pode gerar interesse em uma dada rede de usuários pode ser fonte para criação de um meme.</p>
+            <p>Qual é a origem dos memes? Surgiu na década de 70, um pouco antes dos computadores. O termo vem do grego e significa "imitação".</p>
+            <p>Qual é a intenção por trás do meme? É uma forma rápida de condensar pensamentos, emoções e discursos, em um conteúdo facilmente compartilhável.</p>
+            <p>Por que o nome meme? É um termo grego que significa imitação.</p>
+            <p>Qual é o objetivo do meme? Referindo-se ao fenômeno de "viralização" de uma informação, ou seja, qualquer vídeo, imagem, frase, ideia, música, etc., que alcança muita popularidade.</p>
+        </div>
+
+        <footer>
+            <p>Site programado totalmente por Kaike</p>
+            <p>Texto por Bianca</p>
+            <p>Memes por Amanda e Gabrielly</p>
+            <p>Assistência nos memes Wendrius</p>
+        </footer>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
